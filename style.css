@@ -1,17 +1,21 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
   color: #333;
+  background: #fff;
   line-height: 1.6;
 }
 
-header.hero {
+.hero {
   background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
   color: white;
-  text-align: center;
   padding: 80px 20px;
-  position: relative;
+  text-align: center;
 }
 
 .hero-content {
@@ -21,20 +25,20 @@ header.hero {
   border-radius: 10px;
 }
 
-header nav {
+.navbar {
   background: #003d5c;
   padding: 10px;
   text-align: center;
 }
 
-header nav a {
+.navbar a {
   color: white;
-  margin: 0 15px;
+  margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
 }
 
-section {
+main {
   padding: 40px 20px;
   max-width: 1000px;
   margin: auto;
@@ -43,46 +47,47 @@ section {
 h2 {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 28px;
 }
 
 .service-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   gap: 20px;
-  justify-content: center;
 }
 
 .service-item {
-  flex: 1 1 250px;
-  background: #f9f9f9;
+  flex: 1 1 280px;
+  background: #f4f4f4;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: center;
 }
 
 .gallery {
   display: flex;
   gap: 20px;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .gallery img {
   width: 350px;
   height: 250px;
   object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .testimonial {
-  background: #f4f4f4;
+  background: #f9f9f9;
   padding: 20px;
-  margin-bottom: 20px;
-  border-left: 5px solid #003d5c;
-  max-width: 700px;
   margin: 20px auto;
+  border-left: 4px solid #003d5c;
+  max-width: 700px;
 }
 
 .btn {
@@ -90,9 +95,9 @@ h2 {
   background: #003d5c;
   color: white;
   padding: 10px 20px;
+  margin-top: 15px;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 10px;
 }
 
 footer {
